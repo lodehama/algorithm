@@ -1,8 +1,9 @@
-
+#
 # 1. a,b,c 처럼 문자가 해당 문자열에 얼마나 있는지 파악하고, 그 개수가 가장 크다면 반환해줘야 하는 값을 그 알파벳으로 변환
 # a -> hello my name is dingcodingco -> 0 max_occurre = 0 max_alphabet = a
 # b -> hello my name is dingcodingco -> 0 max_occurre = 0 max_alphabet = b
 # c -> hello my name is dingcodingco -> 0 max_occurre = 2 max_alphabet = c
+
 def find_max_occurred_alphabet(string):
 	alphabet_array = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s",
 	                  "t", "u", "v", "x", "y", "z"]
