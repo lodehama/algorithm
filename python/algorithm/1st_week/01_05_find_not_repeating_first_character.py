@@ -4,12 +4,23 @@
 
 input = "abadabac"
 
+
 def find_not_repeating_first_character(string):
 	# 반복되지 않는 첫번째 알파벳 -> 반복 되는지 안 되는지를 판단
 	# alphabet_occurence_array
-	# string에서 알파벳의 빈도수를 찾기 -> 빈도수가 1인 알파벳들 중에서 string에서 뭐가 먼저 나왔는지를 찾기
-	# 내일 이어서
-	print(find_alphabet_occurence_array(string))
+	# string에서 알파벳의 빈도수를 찾기
+	occurrence_array = find_alphabet_occurence_array(string)
+	# 빈도수가 1인 알파벳들 중에서 string에서 뭐가 먼저 나왔는지를 찾기
+	not_repeating_character_array = []
+	for index in range(len(occurrence_array)):
+		alphabet_occurrence = occurrence_array[index]
+		if alphabet_occurrence == 1:
+			not_repeating_character_array.append(chr(index + ord('a')))
+
+	print(not_repeating_character_array)
+	for char in string:
+		if char in not_repeating_character_array:
+			return char
 	return "_"
 
 
