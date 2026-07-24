@@ -4,7 +4,7 @@
 
 input = "abadabac"
 
-
+# O(N)
 def find_not_repeating_first_character(string):
 	# 반복되지 않는 첫번째 알파벳 -> 반복 되는지 안 되는지를 판단
 	# alphabet_occurence_array
